@@ -44,13 +44,13 @@ const profesor4 = new Profesores (4, "Mateo", "Suarez", 28, "Programacion Backen
 profesoresCoder.push(profesor4)
 
 function nuevoProfesor(){
-    let nombreProfesor = document.getElementsByClassName ("nombreProfesor")
-    let apellidoProfesor = document.getElementsByClassName ("apellidoProfesor")
-    let edadProfesor = document.getElementsByClassName ("edadProfesor")
-    let materiaProfesor = document.getElementsByClassName ("materiaProfesor")
+    let nombreProfesor = document.getElementsById ("nombreProfesor")
+    let apellidoProfesor = document.getElementsById ("apellidoProfesor")
+    let edadProfesor = document.getElementsById ("edadProfesor")
+    let materiaProfesor = document.getElementsById ("materiaProfesor")
     let profesorIngresado = new Profesores (profesoresCoder.length+1,nombreProfesor.value, apellidoProfesor.value, edadProfesor.value, materiaProfesor.value, "assets/imagenProfesor.jpg")
     console.log(profesorIngresado);
 }
 
-const guardarProfesorBtn = document.getElementsByClassName("guardarProfesorBtn")
+const guardarProfesorBtn = document.getElementsById("guardarProfesorBtn")
 guardarProfesorBtn.addEventListener("click", nuevoProfesor)
