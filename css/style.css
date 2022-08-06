@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@1,500&family=Poppins:ital,wght@0,200;1,100&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+/* Cuerpo de la pagina */
+.fondoPantalla {
+  background-color: #e07f10; 
+  font-family: 'Arimo', sans-serif, italic;
+}
+.encabezadoPagina{
+    display: flex;
+    justify-content: space-around;
+    background-color: #a502026c;
+}
+.imagenLogo{
+    height: 50px;
+}
+
