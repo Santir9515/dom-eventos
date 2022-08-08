@@ -18,21 +18,38 @@
     </header>
     <br>
     <main>
-        <p>Bienvenido profesor, aqui usted puede cargar a los alumnos, las notas, y el sistema mismo le declarará si aprobó su materia o nó, recuerde además que debe poner tambien los datos personales de usted y de la materia a la cual le está cargando las notas.</p>
+        <p>Bienvenido profesor, aqui usted debe cargar sus datos para poder guardarlos en la base de datos.</p>
     </main>
-    <section>
-        <form>
-            <label for="nombreProfesor">Ingrese su nombre</label><br>
-            <input type="text" id="nombreProfesor" name="Nombre"><br>
-            <label for="apellidoProfesor">Ingrese su apellido</label><br>
-            <input type="text" id="apellidoProfesor" name="apellido"><br>
-            <label for="edadProfesor">Ingrese su edad</label><br>
-            <input type="text" id="edadProfesor" name="edad"><br>
-            <label for="materiaProfesor">Ingrese la materia que dicta</label><br>
+    <section class="sectionProfesor">
+        <form class="formProfesor">
+            <label for="nombreProfesor">Ingrese su nombre</label>
+            <input type="text" id="nombreProfesor" name="Nombre">
+            <label for="apellidoProfesor">Ingrese su apellido</label>
+            <input type="text" id="apellidoProfesor" name="apellido">
+            <label for="edadProfesor">Ingrese su edad</label>
+            <input type="text" id="edadProfesor" name="edad">
+            <label for="materiaProfesor">Ingrese la materia que dicta</label>
             <input type="text" id="materiaProfesor" name="materia"><br>
-            <button class="guardarProfesorBtn">Guardar</button>
         </form>
+        <button id="guardarProfesorBtn">Guardar</button>
     </section>
+    <section class="sectionAlumno">
+        <p>En el siguiente apartado, usted debe ingresar los datos del alumno a calificar</p>
+        <form class="formAlumno">
+            <label for="nombreAlumno">Ingrese nombre del alumno</label>
+            <input type="text" id="nombreAlumno" name="Nombre">
+            <label for="apellidoAlumno">Ingrese apellido del alumno</label>
+            <input type="text" id="apellidoAlumno" name="Apellido">
+            <label for="sexoAlumno">Ingrese el género del alumno</label>
+            <input type="text" id="sexoAlumno" name="Sexo">
+            <label for="edadAlumno">Ingrese la edad del alumno</label>
+            <input type="text" id="edadAlumno" name="Edad"><br>
+        </form>
+        <button id="guardarAlumnoBtn">
+            Guardar
+        </button>
+    </section>
+
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <script src="./js/index.js"></script>

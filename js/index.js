@@ -44,13 +44,28 @@ const profesor4 = new Profesores (4, "Mateo", "Suarez", 28, "Programacion Backen
 profesoresCoder.push(profesor4)
 
 function nuevoProfesor(){
-    let nombreProfesor = document.getElementsById ("nombreProfesor")
-    let apellidoProfesor = document.getElementsById ("apellidoProfesor")
-    let edadProfesor = document.getElementsById ("edadProfesor")
-    let materiaProfesor = document.getElementsById ("materiaProfesor")
-    let profesorIngresado = new Profesores (profesoresCoder.length+1,nombreProfesor.value, apellidoProfesor.value, edadProfesor.value, materiaProfesor.value, "assets/imagenProfesor.jpg")
-    console.log(profesorIngresado);
+    let nombreProfesor = document.getElementById ("nombreProfesor")
+    let apellidoProfesor = document.getElementById ("apellidoProfesor")
+    let edadProfesor = document.getElementById ("edadProfesor")
+    let materiaProfesor = document.getElementById ("materiaProfesor")
+    let profesorIngresado = new Profesores (profesoresCoder.length+1,nombreProfesor.value, apellidoProfesor.value, edadProfesor.value, materiaProfesor.value)
+    profesoresCoder.push(profesorIngresado);
 }
 
-const guardarProfesorBtn = document.getElementsById("guardarProfesorBtn")
+const guardarProfesorBtn = document.getElementById("guardarProfesorBtn")
 guardarProfesorBtn.addEventListener("click", nuevoProfesor)
+console.log(profesoresCoder);
+
+function nuevoAlumno(){
+    let nombreAlumno = document.getElementById("nombreAlumno")
+    let apellidoAlumno = document.getElementById("apellidoAlumno")
+    let sexoAlumno = document.getElementById("sexoAlumno")
+    let edadAlumno = document.getElementById("edadAlumno")
+    let alumnoIngresado = new Alumnos (alumnosCoder.length+1,nombreAlumno.value, apellidoAlumno.value, sexoAlumno.value, edadAlumno.value)
+    alumnosCoder.push(alumnoIngresado)
+}
+
+const guardarAlumnoBtn = document.getElementById("guardarAlumnoBtn")
+guardarAlumnoBtn.addEventListener("click", nuevoAlumno)
+
+console.log(alumnosCoder);
