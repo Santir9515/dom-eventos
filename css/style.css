@@ -39,8 +39,10 @@
 .sectionProfesor{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .sectionAlumno{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
